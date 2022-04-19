@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Cadastro de Tarefas</title>
-</head>
-<body>
-  <div id="tarefasApp">
-    <h1>Controle suas tarefas</h1>
-      <h2>Adicionar tarefa</h2>
-      <form>
-          <input type="text" placeholder="Título da tarefa">
-          <input type="submit" value="Adicionar">
-      </form>
-    <hr>
-    <h2>Tarefas a fazer</h2>
-    <table>
-      <thead>
-        <th>Pronta?</th>
-        <th>Título</th>
-        <th>Remover</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td><input type="checkbox" v-model="tarefa.pronta"></td>
-          <td><span>Tarefa</span></td>
-          <td><button>Delete</button></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Cadastro de Tarefas</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div id="tarefasApp">
+			<div class="container">
+				<h1>Controle suas tarefas</h1>
+				<div class="formulario">
+					<h2>Adicionar tarefa</h2>
+					<form>
+						<input class="entrada" type="text" placeholder="Título da tarefa" />
+						<input class="botao" type="submit" value="Adicionar" />
+					</form>
+				</div>
+			</div>
+			<div class="container">
+				<h2>Tarefas a fazer</h2>
+				<table>
+					<thead>
+						<th>Pronta?</th>
+						<th>Título</th>
+						<th>Remover</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td><span>Tarefa</span></td>
+							<td><button>Delete</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
 </html>

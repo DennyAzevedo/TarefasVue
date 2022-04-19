@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(209, 202, 202);
+}
+
+.container {
+  max-width: 1200px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.formulario {
+  border: 1px solid #000;
+  background-color: rgb(245, 236, 236);
+  color: #004d99;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 20px;
+  width: 440px;
+  height: 140px;
+  box-shadow: 4px 4px rgb(53, 51, 51);
+}
+
+.formulario .entrada {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+}
+
+.formulario .botao {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #2d862d;
+  color: #FFF;
+}
