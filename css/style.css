@@ -103,3 +103,7 @@ tr:nth-child(even) {
   color: #FFF;
   border-radius: 15px;
 }
+
+.tarefaPronta {
+  text-decoration: line-through;
+}

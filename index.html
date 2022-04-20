@@ -11,8 +11,12 @@
 				<h1>Controle suas tarefas</h1>
 				<div class="formulario">
 					<h2>Adicionar tarefa</h2>
-					<form>
-						<input type="text" placeholder="Título da tarefa" />
+					<form v-on:submit="addTarefa">
+						<input
+							v-model="novaTarefa.titulo"
+							type="text"
+							placeholder="Título da tarefa"
+						/>
 						<input class="botao" type="submit" value="Adicionar" />
 					</form>
 				</div>
@@ -27,9 +31,17 @@
 					</thead>
 					<tbody>
 						<tr v-for="tarefa in tarefas">
-							<td class="col1"><input type="checkbox" /></td>
-							<td><span>{{ tarefa.titulo }}</span></td>
-							<td class="col3"><button>Delete</button></td>
+							<td class="col1">
+								<input type="checkbox" v-model="tarefa.pronta" />
+							</td>
+							<td>
+								<span v-bind:class="{ tarefaPronta: tarefa.pronta }"
+									>{{ tarefa.titulo }}</span
+								>
+							</td>
+							<td class="col3" v-on:click="removerTarefa(tarefa)">
+								<button>Delete</button>
+							</td>
 						</tr>
 					</tbody>
 				</table>
