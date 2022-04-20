@@ -3,7 +3,9 @@
 ### Desenvolvido em Vue.js
 
 Projeto desenvolvido para treinamento.  
-Projetos do Curso de Vue.js [DevMedia](https://www.devmedia.com.br/view/viewaula.php?idcomp=38886)  
+Projetos do Curso de Vue.js [DevMedia](https://www.devmedia.com.br/view/viewaula.php?idcomp=38886)
+
+_tutor: Fagner Pinheiro_
 
 Utilizando _Visual Studio Code_
 
